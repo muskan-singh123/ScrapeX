@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Scraper Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <main class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fa-solid fa-bolt"></i>
+                <h1>Scrape<span class="highlight">X</span></h1>
+            </div>
+            <p class="subtitle">Find the best deals on Flipkart in seconds.</p>
+        </header>
+
+        <div class="glass-panel search-panel">
+            <div class="input-group">
+                <i class="fa-solid fa-magnifying-glass input-icon"></i>
+                <input type="text" id="queryInput" placeholder="What are you looking for? (e.g. Phone)" value="Phone">
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-tag input-icon"></i>
+                <input type="number" id="priceInput" placeholder="Budget (₹)" value="15000">
+            </div>
+            <button id="scrapeBtn" class="cta-button">
+                <span>Start Scraping</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+            <p>Scanning Flipkart...</p>
+        </div>
+
+        <div id="results" class="results-grid">
+            <!-- Results will be injected here -->
+        </div>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+requests
+beautifulsoup4
+lxml
+playwright
+mysql-connector-pythonpython-dotenv
